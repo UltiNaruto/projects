@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<script>
-var language = window.navigator.userLanguage || window.navigator.language;
-alert(language);
+<script type="text/javascript">
+  var language = window.navigator.userLanguage || window.navigator.language;
+  document.write("<html lang=\""+language+"\">")
 </script>
-<html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Projects of UltiNaruto</title>
+    <script type="text/javascript">
+      var language = window.navigator.userLanguage || window.navigator.language;
+      if(language == "fr")
+        document.write("<title>Projets de UltiNaruto</title>")
+      else
+        document.write("<title>Projects of UltiNaruto</title>")
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -20,21 +25,29 @@ alert(language);
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List of all my projects : </h3>
-
+      <script type="text/javascript">
+        var language = window.navigator.userLanguage || window.navigator.language;
+        if(language == "fr")
+          document.write("<h3><a id=\"welcome-to-github-pages\" class=\"anchor\" href=\"#welcome-to-github-pages\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon octicon-link\"></span></a>Liste de tout mes projets : </h3>")
+        else
+          document.write("<h3><a id=\"welcome-to-github-pages\" class=\"anchor\" href=\"#welcome-to-github-pages\" aria-hidden=\"true\"><span aria-hidden=\"true\" class=\"octicon octicon-link\"></span></a>List of all my projects : </h3>")
+      </script>
       <p><a href="http://ultinaruto.github.io/projects/games/uncs2d">[PC]UltiNaruto Counter-Strike 2D</a></p>
       <p><a href="http://ultinaruto.github.io/projects/games/tetris3ds">[3DS]Tetris 3DS</a> (22/09/2015)</p>
       <p><a href="http://ultinaruto.github.io/projects/utilities/vitapadclient-java">[PC]VitaPadClient Java</a> (21/08/2016)</p>
       <footer class="site-footer">
+        <script type="text/javascript">
+          var language = window.navigator.userLanguage || window.navigator.language;
+          if(language == "fr")
+            document.write("<p>Mots-clés :<br/>")
+          else
+            document.write("<p>Tags :<br/>")
+        </script>
         <p>Tags :<br/>
         - PC : PC<br/>
         - 3DS : Nintendo 3DS<br/>
         - PSV : PlayStation Vita</p>
       </footer>
-
-    </section>
-
-  
+    </section>  
   </body>
 </html>
