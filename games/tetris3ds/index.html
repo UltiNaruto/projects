@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<script type="text/javascript">
+  var language = window.navigator.userLanguage || window.navigator.language;
+  document.write("<html lang=\""+language+"\">")
+</script>
   <head>
     <meta charset="UTF-8">
     <title>Tetris 3DS</title>
@@ -15,40 +18,87 @@
       <h2 class="project-tagline"></h2>
     </section>
     <section class="main-content">
-      <p>I ported this SDL game (<a href="http://www.aaroncox.net/tutorials/arcade/FallingBlocks.html">Link</a>) to 3DS. I had to change background because it wouldn't fit with 3DS. There's still lots to do though.</p>
-      <h3></h3>
-      <p>It has 99 levels and speed increase quite fast after level 6.</p>
-      <h3></h3>
-      <p>That's my first homebrew games for 3DS and I'll try to do more in the future.</p>
-      <h3></h3>
-      <h3>Keys :</h3>
-      <h3></h3>
-      <p>DPad UP - Rotate block clockwise<br/>
-         L Trigger - Rotate block reverted clockwise<br/>
-         R Trigger - Rotate block clockwise<br/>
-         DPad DOWN - Move block down faster<br/>
-         DPad LEFT/RIGHT - Move block to the left/right<br/>
-         A Button - Instantly drop down the block<br/>
-         Start - Exit to HB Launcher<br/>
-         Select - Pause the game</p>
-      <h3></h3>
-      <h3>Screenshots :</h3>
-      <h3></h3>
-      <p>v0.1a (OLD) :<br/>
-      <img src="https://i.imgur.com/03qtnDP.png"/></p>
-      <h3></h3>
-      <p>v0.305b :<br/>
-      <img src="https://i.imgur.com/QLnLEYs.png"/></p>
-      <h3></h3>
-      <h3>Known bugs :</h3>
-      <h3></h3>
-      <p>- Image is wrongly rotated (90° clockwise)<br/>
-         - Colors doesn't match the PNGs attached in gfx folder</p>
-      <h3></h3>
-      <a href="https://github.com/UltiNaruto/Tetris3DS">Source</a><br/>
-      <a href="https://github.com/UltiNaruto/Tetris3DS/releases">Download</a>
+      <script type="text/javascript">
+        var language = window.navigator.userLanguage || window.navigator.language;
+          if(language == "fr")
+          {
+            document.write("<p>J'ai porté ce jeu SDL (http://www.aaroncox.net/tutorials/arcade/FallingBlocks.html) sur 3DS. L'image du panel ne collait pas dans la 3DS donc j'ai dû en fabriquer un de toute pièce. Y a encore pas mal de choses à revoir.</p>"+
+                           "<h3></h3>"+
+                           "<p>Il y a 99 niveaux et la vitesse de jeu augmente vers le niveau 6.</p>"+
+                           "<h3></h3>"+
+                           "<p>C'est mon premier jeu sur 3DS et j'essaierai d'en faire d'autre. (J'ai d'autres idées de jeux mais pas assez développé pour sortir quoique ce soit)</p>"+
+                           "<h3></h3>"+
+                           "<h3>Les touches :</h3>"+
+                           "<h3></h3>"+
+                           "<p>Pad Directionnelle Haut - Faire tourner le bloc dans le sens des aiguilles d'une montre<br/>"+
+                           "Gachette L - Faire tourner le bloc dans le sens inverse des aiguilles d'une montre<br/>"+
+                           "Gachette R - Faire tourner le bloc dans le sens des aiguilles d'une montre<br/>"+
+                           "Pad Directionnelle Bas - Bouger le bloc vers le bas plus vite<br/>"+
+                           "Pad Directionnelle Gauche/Droite - Bouger le bloc vers la gauche/la droite<br/>"+
+                           "Bouton A - Faire tomber le bloc direct vers le bas<br/>"+
+                           "Bouton Start - Quitter vers le Homebrew Launcher (.3dsx)/menu Home (.cia)<br/>"+
+                           "Bouton Select - Pause</p>"+
+                           "<h3></h3>"+
+                           "<h3>Captures d'écran :</h3>"+
+                           "<h3></h3>"+
+                           "<p>v0.1a (ANCIENNE) :<br/>"+
+                           "<img src=\"https://i.imgur.com/03qtnDP.png\"/></p>"+
+                           "<h3></h3>"+
+                           "<p>v0.305b :<br/>"+
+                           "<img src=\"https://i.imgur.com/QLnLEYs.png\"/></p>"+
+                           "<h3></h3>"+
+                           "<h3>Bugs connu :</h3>"+
+                           "<h3></h3>"+
+                           "<p>- L'image du panel de l'écran du haut a une mauvaise rotation (90° dans le sens des aiguilles d'une montre si j'utilise un draw image avec paramètre x y)<br/>"+
+                           "- Les images ne contiennent pas de détails.</p>"+
+                           "<h3></h3>"+
+                           "<a href=\"https://github.com/UltiNaruto/Tetris3DS\">Source</a><br/>"+
+                           "<a href=\"https://github.com/UltiNaruto/Tetris3DS/releases\">Téléchargement</a>")
+          }
+          else
+          {
+            document.write("<p>I ported this SDL game (<a href=\"http://www.aaroncox.net/tutorials/arcade/FallingBlocks.html\">Link</a>) to 3DS. I had to change background because it wouldn't fit with 3DS. There's still lots to do though.</p>"+
+                           "<h3></h3>"+
+                           "<p>It has 99 levels and speed increase quite fast after level 6.</p>"+
+                           "<h3></h3>"+
+                           "<p>That's my first homebrew games for 3DS and I'll try to do more in the future.</p>"+
+                           "<h3></h3>"+
+                           "<h3>Keys :</h3>"+
+                           "<h3></h3>"+
+                           "<p>DPad UP - Rotate block clockwise<br/>"+
+                           "L Trigger - Rotate block reverted clockwise<br/>"+
+                           "R Trigger - Rotate block clockwise<br/>"+
+                           "DPad DOWN - Move block down faster<br/>"+
+                           "DPad LEFT/RIGHT - Move block to the left/right<br/>"+
+                           "A Button - Instantly drop down the block<br/>"+
+                           "Start - Exit to HB Launcher<br/>"+
+                           "Select - Pause the game</p>"+
+                           "<h3></h3>"+
+                           "<h3>Screenshots :</h3>"+
+                           "<h3></h3>"+
+                           "<p>v0.1a (OLD) :<br/>"+
+                           "<img src=\"https://i.imgur.com/03qtnDP.png\"/></p>"+
+                           "<h3></h3>"+
+                           "<p>v0.305b :<br/>"+
+                           "<img src=\"https://i.imgur.com/QLnLEYs.png\"/></p>"+
+                           "<h3></h3>"+
+                           "<h3>Known bugs :</h3>"+
+                           "<h3></h3>"+
+                           "<p>- Image is wrongly rotated (90° clockwise)<br/>"+
+                           "- Colors doesn't match the PNGs attached in gfx folder</p>"+
+                           "<h3></h3>"+
+                           "<a href=\"https://github.com/UltiNaruto/Tetris3DS\">Source</a><br/>"+
+                           "<a href=\"https://github.com/UltiNaruto/Tetris3DS/releases\">Download</a>")
+          }
+      </script>
       <footer class="site-footer">
-        <a href="http://ultinaruto.github.io/projects">Home</a>
+        <script type="text/javascript">
+          var language = window.navigator.userLanguage || window.navigator.language;
+          if(language == "fr")
+            document.write("<a href=\"http://ultinaruto.github.io/projects\">Accueil</a>")
+          else
+            document.write("<a href=\"http://ultinaruto.github.io/projects\">Home</a>")
+        </script>
       </footer>
     </section>
   </body>
