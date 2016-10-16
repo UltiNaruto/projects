@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<script type="text/javascript">
+  var language = window.navigator.userLanguage || window.navigator.language;
+  document.write("<html lang=\""+language+"\">")
+</script>
   <head>
     <meta charset="UTF-8">
     <title>VitaPadClient-java</title>
@@ -43,7 +46,13 @@
       <a href="https://github.com/UltiNaruto/VitaPadClient-java">Source</a><br/>
       <a href="https://github.com/UltiNaruto/VitaPadClient-java/releases">Download</a>
       <footer class="site-footer">
-        <a href="http://ultinaruto.github.io/projects">Home</a>
+        <script type="text/javascript">
+          var language = window.navigator.userLanguage || window.navigator.language;
+          if(language == "fr")
+            document.write("<a href=\"http://ultinaruto.github.io/projects\">Accueil</a>")
+          else
+            document.write("<a href=\"http://ultinaruto.github.io/projects\">Home</a>")
+        </script>
       </footer>
     </section>
   </body>
