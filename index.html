@@ -20,7 +20,13 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">My Projects</h1>
+      <script type="text/javascript">
+        var language = window.navigator.userLanguage || window.navigator.language;
+        if(language == "fr")
+          document.write("<h1 class="project-name">Mes Projets</h1>")
+        else
+          document.write("<h1 class="project-name">My Projects</h1>")
+      </script>
       <h2 class="project-tagline"></h2>
     </section>
 
@@ -43,7 +49,6 @@
           else
             document.write("<p>Tags :<br/>")
         </script>
-        <p>Tags :<br/>
         - PC : PC<br/>
         - 3DS : Nintendo 3DS<br/>
         - PSV : PlayStation Vita</p>
